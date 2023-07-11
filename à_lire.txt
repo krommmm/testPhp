@@ -1,0 +1,1 @@
+problème smtp, car localhost n'est pas configuré pour ça, contrairement aux serveurs mutualisés

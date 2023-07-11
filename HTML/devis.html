@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>envie-bretonne</title>
+		<link rel="stylesheet" href="../CSS/index.css" type="text/css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/png" href="./assets/logo.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/65211b898e.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div id="Ancre"></div>
+		<header>
+			<!-- Renseignements  -->
+			<div class="top">
+				<p>
+					<span class="red"
+						>Envie Bretonne, votre traiteur crépier</span
+					>
+				</p>
+				<p>Conseils - Devis - Renseignements</p>
+				<p>
+					Appelez nous au <span class="red big">06 27 78 06 15</span>
+				</p>
+			</div>
+			<!-- diapo + bannière  -->
+			<div class="middle">
+				<div class="diapo_container">
+					<div class="diapo">
+						<img
+							class="diapo_img"
+							src="../assets/crepe.png"
+							alt="crepe"
+						/>
+						<div class="banner_container">
+							<p class="titre">Traiteur - Crépier</p>
+							<img
+								class="triskel"
+								src="../assets/triskel.png"
+								alt="croix bretonne"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Panneau de navigation  -->
+			<div class="bottom">
+				<a href="../index.html"
+					><i class="fa-solid fa-house red"
+						><p class="red coolText">Accueil</p></i
+					></a
+				>
+				<a href="../HTML/formules.html"
+					><i class="fa-solid fa-utensils brown"
+						><p class="brown coolText">Formules</p></i
+					></a
+				>
+				<a href="../HTML/cocktails.html"
+					><i class="fa-solid fa-martini-glass black"
+						><p class="black coolText">Cocktails</p></i
+					></a
+				>
+				<a href="../HTML/devis.html"
+					><i class="fa-solid fa-pencil green"
+						><p class="green coolText">Devis</p></i
+					></a
+				>
+				<a href="../HTML/contact.html"
+					><i class="fa-regular fa-envelope brown"
+						><p class="brown coolText">Contact</p></i
+					></a
+				>
+				<a href="../HTML/photos.html"
+					><i class="fa-solid fa-camera blue"
+						><p class="blue coolText">Photos</p></i
+					></a
+				>
+			</div>
+		</header>
+
+		<a class="AncreDébut" href="#Ancre">
+			<div class="AncreDébutImg"><i class="fa-solid fa-up-long"></i></div
+		></a>
+		<div class="Devis">
+			<h1>Un anniversaire, un départ en retraite à fêter ?</h1>
+			<h2>
+				N'hésitez pas à nous contacter via ce formulaire en étant le
+				plus précis possible dans votre demande.
+			</h2>
+			<div class="form_Devis">
+				<form id="formID" class="formular" method="post" action="../Devis.php">
+				<fieldset>
+					<legend>Demande de devis</legend>
+					 <!-- nom  -->
+					<label htmlFor="Nom">
+						<div class="title">
+							<i class="fa-solid fa-user" ></i>
+							Nom :
+						</div>
+						<input
+							type="text"
+							id="input_nom"	
+							oninput="handleNom(event)"					
+						/>
+					</label>
+					 <!-- prenom  -->
+					<label htmlFor="prenom">
+						<div class="title">
+							<i class="fa-solid fa-user" ></i>
+							Prénom :
+						</div>
+						<input
+							type="text"						
+						/>
+					</label>
+					<!-- email -->
+					<label htmlFor="email">
+						<div class="title">
+							<i class="fa-solid fa-envelope" ></i>
+							E-Mail :
+						</div>
+						<input
+							type="email"						
+						/>
+					</label>
+					 <!-- phone  -->
+					<label htmlFor="phone">
+						<div class="title">
+							<i class="fa-solid fa-phone" ></i>
+							Téléphone :
+						</div>
+						<input
+							type="text"						
+						/>
+					</label>
+					<!-- NbPersonnes  -->
+					<label htmlFor="nbPersonnes">
+						<div class="title">
+							<i class="fa-solid fa-question" ></i> Nb
+							personnes :
+						</div>
+						<input
+							type="text"							
+						/>
+					</label>
+					 <!-- ville -->
+					<label htmlFor="Ville">
+						<div class="title">
+							<i class="fa-solid fa-truck" ></i>
+							Ville de réception :
+						</div>
+						<input
+							type="text"							
+						/>
+					</label>
+					<!-- msg  -->
+					<label htmlFor="msg">
+						<div class="title">
+							<i class="fa-solid fa-pencil" ></i>
+							Votre message :
+						</div>
+						<textarea
+							id="comment"						
+						></textarea>
+					</label>
+					<!-- bouton -->
+					<button type="submit"
+						class="btn-inverse btn btn-green">
+						Envoyer
+						<i class="fa-solid fa-check" ></i>
+				</button>
+				</fieldset>
+			</form>
+			</div>
+		</div>
+		<footer>
+			<img id="triskel_img" src="../assets/triskel.png" alt="logo envie-bretonne"></img>
+			<p>© Envie-Bretonne.com 2013-<span class="date"></span></p>
+		</footer>
+        <script src="../JS/header2.js"></script>
+		<script src="../JS/index.js"></script>
+	</body>
+</html>
